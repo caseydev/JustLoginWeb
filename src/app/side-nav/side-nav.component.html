@@ -1,0 +1,27 @@
+<div class="sidebar">
+  <ul ngbNav #nav="ngbNav" class="nav flex-columnn side-nav">
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/home']"><img src="../../assets/images/ico-home.svg" alt="home"> Home</a>
+
+    </li>
+    <li ngbNavItem ngbDropdown>
+      <a ngbNavLink ngbDropdownToggle id="navbarDropdown1" role="button" [routerLink]="['/']"><img
+          src="../../assets/images/ico-leave.svg" alt="home"> Leave</a>
+      <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu dropdown-v3">
+        <a ngbDropdownItem href="#">Dashboard</a>
+        <a ngbDropdownItem href="#">Reports</a>
+        <a ngbDropdownItem href="#">Administration</a>
+        <a ngbDropdownItem href="#">Configuration</a>
+      </div>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink='/'><img src="../../assets/images/ico-payroll.svg" alt="home"> Payroll</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink='/'><img src="../../assets/images/ico-time.svg" alt="home"> Attendance</a>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink routerLink='/'><img src="../../assets/images/ico-form.svg" alt="home"> Form</a>
+    </li>
+  </ul>
+</div>

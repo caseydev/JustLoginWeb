@@ -1,0 +1,15 @@
+#wrapper {
+    overflow: hidden;
+    height: 100%;
+    background-color: #F2F3F7;
+}
+
+main[role="main"] {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100% - 72px);
+}
+
+.content {
+    padding: 20px;
+}

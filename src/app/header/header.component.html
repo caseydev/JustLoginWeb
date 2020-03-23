@@ -1,0 +1,32 @@
+<header id="header">
+  <div class="container">
+    <div class="logo">
+      <img src="../../assets/images/logo.svg" alt="Just Login">
+    </div>
+    <div class="header-right">
+      <a class="btn-link" href="#"><i class="fas fa-info-circle"></i></a>
+      <a class="btn-link" href="#"><i class="fas fa-comments"></i></a>
+      <div ngbDropdown class="btn-link d-inline-block">
+        <button class="btn btn-link profile-card" ngbDropdownToggle id="navProfileDrop" role="button">
+            <img src="https://i.picsum.photos/id/1/200/200.jpg" alt="Avatar" class="rounded-circle">
+            <span class="info">
+                <strong class="name">Jagvinder Singh</strong>
+                <span class="designation">Manager</span>
+            </span>
+        </button>
+        <div ngbDropdownMenu aria-labelledby="navProfileDrop" class="dropdown-v2">
+          <button ngbDropdownItem><i class="fas fa-user"></i> My Profile</button>
+          <button ngbDropdownItem><i class="fas fa-user-cog"></i> My Settings</button>
+          <div class="dropdown-divider"></div>
+          <button ngbDropdownItem><i class="fas fa-user-plus"></i> Add User</button>
+          <button ngbDropdownItem><i class="fas fa-user-tie"></i> User Admin</button>
+          <button ngbDropdownItem><i class="fas fa-bullhorn"></i> Announcement</button>
+          <div class="dropdown-divider"></div>
+          <button ngbDropdownItem><i class="fas fa-adjust"></i> Switch to Classic</button>
+          <div class="dropdown-divider"></div>
+          <button ngbDropdownItem><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
